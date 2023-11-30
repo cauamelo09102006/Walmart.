@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="imagens/svg+xml" href="/imagens/logoo.png">
+    <title>Trio Parada Dura</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trio Parada Dura</h1>
+        <p>Desenvolvedores da Web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre" onclick="mostrarSecao('PaginaSobre')">Sobre Nós</a></li>
+            <li><a href="#projetos" onclick="mostrarSecao('PaginaProjetos')">Projetos</a></li>
+            <li><a href="#contato" onclick="mostrarSecao('PaginaContato')">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre" class="container">
+        <h2>Sobre Nós</h2>
+        <p>Olá! Somos uma equipe de desenvolvedores da web apaixonados por criar experiências incríveis na web.</p>
+    </section>
+
+    <section id="projetos" class="container">
+    
+    </section>
+            
+    <section id="contato" class="container">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <section id="PaginaSobre" class="container" style="display: none;">
+        <h2>Sobre o site</h2>
+        <p>Saudações, visitante! É um prazer recebê-lo em nosso espaço digital. 
+            Somos uma equipe do 2º ano do Ensino Médio no Senai, 
+            e este site é o resultado do nosso esforço conjunto
+             para explorar as nuances do Data Warehouse.</p>
+             <p>Percorra os bastidores dos nossos projetos e veja como
+                transformamos conceitos abstratos em soluções tangíveis, Este site vai 
+                além de ser apenas um portfólio; é um convite para você mergulhar 
+                conosco na exploração do vasto terreno do Data Warehouse</p>
+                <p>Então, sinta-se à vontade para explorar e absorver a experiência.
+                Estamos entusiasmados em 
+                compartilhar um pouco do nosso universo no Data Warehouse com você!</p>
+
+        <!-- <img src="imagens/WhatsApp Image 2023-11-28 at 15.50.00.jpeg" alt="" srcset=""> -->
+    </section>
+
+    <section id="PaginaProjetos" class="container" style="display: none;">
+        <h2>Walmart</h2>
+        <p><b>Visão Geral:</b>
+
+            <hr>
+            <p>Uma empresa que utiliza extensivamente o conceito de Data Warehouse é a Walmart. A Walmart, como uma das maiores redes de varejo do mundo, lida com uma quantidade imensa de dados de vendas, estoque, logística e interações do cliente diariamente. </p>
+            <p>A Walmart aplica o conceito de Data Warehouse em várias áreas, incluindo:</p> 
+            <hr>
+    
+            <b>Gestão de Estoque e Fornecimento: </b>
+            <hr>
+            <p>Utilizando dados do Data Warehouse, a Walmart otimiza a gestão de estoque, prevendo padrões de demanda, evitando excesso ou escassez de produtos nas prateleiras e melhorando a eficiência da cadeia de suprimentos. </p>
+            <hr>
+
+            <b>Análise de Vendas e Promoções:</b>
+            <hr>
+            O Data Warehouse é usado para analisar dados de transações de vendas, identificar tendências sazonais, avaliar a eficácia de promoções e ajustar estratégias de preços. 
+            <hr>
+
+            <b>Experiência do Cliente:</b>
+            <hr>
+            A Walmart utiliza dados do Data Warehouse para entender o comportamento do cliente, personalizando ofertas, sugerindo produtos relevantes e aprimorando a experiência geral de compra online e em lojas físicas. </p>
+            <hr>
+
+            <b>Gestão de Recursos Humanos:</b>
+            <hr>
+            Na gestão de recursos humanos, a Walmart pode usar o Data Warehouse para analisar dados relacionados a funcionários, como desempenho, treinamento e retenção de talentos.</p>
+            <hr>
+
+            <b>Prevenção de Fraudes:</b>
+            <hr>
+            Ao analisar padrões de transações e comportamentos suspeitos, a Walmart utiliza o Data Warehouse para detectar e prevenir fraudes, protegendo suas operações financeiras.</p>
+            <hr>
+
+            <b>Conclusão:</b>
+            <hr>
+            A aplicação do Data Warehouse na Walmart destaca como essa tecnologia é fundamental para empresas de varejo, permitindo uma visão abrangente e estratégica de seus dados para melhorar a eficiência operacional e a satisfação do cliente. 
+            <hr>
+
+        
+    </section>
+
+    <section id="PaginaContato" class="container" style="display: none;">
+        <h2>Entre em Contato</h2>
+    <p>Ficamos felizes em receber seu contato! Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p>Você também pode nos contatar diretamente pelo e-mail
+         <strong>contato@trioparadadura.com</strong> ou ligar para o número 
+        <strong>(XX) XXXX-XXXX</strong>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; Pedro Siqueira Kauã Santos e Cauã Melo </p>
+    </footer>
+
+    <script>
+        function mostrarSecao(idSecao) {
+            // Esconder todas as seções
+            document.querySelectorAll('.container').forEach(secao => {
+                secao.style.display = 'none';
+            });
+
+            // Mostrar a seção desejada
+            document.getElementById(idSecao).style.display = 'block';
+        }
+        function mostrarProjeto(idProjeto) {
+            // Esconder todas as seções de projeto
+            document.querySelectorAll('.container').forEach(secao => {
+                if (secao.id.startsWith('Projeto')) {
+                    secao.style.display = 'none';
+                }
+            });
+
+            // Mostrar a seção de projeto desejada
+            document.getElementById(idProjeto).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
